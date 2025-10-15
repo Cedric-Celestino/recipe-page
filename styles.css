@@ -1,0 +1,364 @@
+:root {
+--color1: hsl(0, 0%, 100%);
+
+--color2: hsl(30, 54%, 90%);
+--color3: hsl(30, 18%, 87%);
+--color4: hsl(30, 10%, 34%);
+--color5: hsl(24, 5%, 18%);
+
+--color6: hsl(14, 45%, 36%);
+
+--color7: hsl(332, 51%, 32%);
+--color8: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color2);
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 30rem;
+    display: block;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.card {
+    max-width: 23.5rem;
+    width: 100%;
+    background-color: var(--color1);
+}
+
+.recipe-title {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 500;
+    color: var(--color5);
+    font-size: 1.8rem;
+    margin-inline-start: 1.1em;
+    margin-inline-end: 1.1em;
+}
+
+.recipe-description {
+    font-size: 1.15rem;
+    color: var(--color4);
+    line-height: 1.5rem;
+    margin-inline-start: 1.7em;
+    margin-inline-end: 1.7em;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+.preparation-time {
+    margin-top: 1.5rem;
+    margin-inline-start: 1.7em;
+    margin-inline-end: 2em;
+    background-color: var(--color8);
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    padding-bottom: 0.090em;
+}
+
+.preparation-time h2 {
+    margin-inline-start: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--color7);
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
+.preparation-time ul li {
+    color: var(--color4);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+.preparation-time ul li::marker {
+    color: var(--color7);
+    font-size: 0.7rem;
+}
+
+.preparation-time ul {
+    margin-top: 0.2em;
+    padding-top: 0;
+}
+
+.ingredients {
+    margin-inline-start: 1.2em;
+    margin-inline-end: 1.2em;
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    color: var(--color6);
+    font-size: 1.5rem;
+    margin-bottom: 0.2em;
+}
+
+.ingredients-list li {
+    padding: 0.4em;
+    color: var(--color4);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    margin-inline-start: 0.7em;
+    margin-inline-end: 0.7em;
+    line-height: 1.4em;
+    padding-left: 0.9em;
+    font-weight: 500;
+}
+
+.ingredients-list li::marker {
+    color: var(--color6);
+    font-size: 0.7rem;
+}
+
+.ingredients-list {
+    margin-top: 0;
+    padding-top: 0;
+    list-style: outside;
+}
+
+hr {
+    margin-top: 1.6em;
+    width: 17em;
+    color: var(--color4);
+    opacity: 0.5;
+}
+
+.instructions {
+    font-family: 'Young Serif', sans-serif;
+    color: var(--color6);
+    font-weight: 400;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+}
+
+.instructions-list li{
+    font-family: 'Outfit', sans-serif;
+    padding: 1em;
+    margin-inline-end: 1.2em;
+    font-size: 0.9rem;
+    color: var(--color4);
+    line-height: 1.5em;
+    padding-bottom: 0;
+    font-weight: 500;
+}
+
+.instructions-list li::marker {
+    font-family: 'Arial', sans-serif;
+    color: var(--color7);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.nutrition {
+    font-family: 'Young Serif', sans-serif;
+    margin-inline-start: 1em;
+    margin-inline-end: 1em;
+    color: var(--color6);
+    font-weight: 400;
+}
+
+.nutrition-description {
+    margin-inline-start: 1.5em;
+    margin-inline-end: 1.5em;
+    font-family: 'Outfit', sans-serif;
+    color: var(--color4);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.nutrition-table {
+    margin: 0 auto;
+    width: 17em;
+    border-collapse: collapse;
+    font-family: 'Outfit', sans-serif;
+}
+
+th, td {
+    padding: 0.8em 0;
+    border-bottom: 2px solid var(--color3);
+}
+
+th {
+    text-align: left;
+    font-weight: 500;
+    color: var(--color4);
+    padding-left: 1.7em;
+    font-size: 0.9rem;
+}
+
+td {
+    text-align: left;
+    padding-left: 0;
+    color: var(--color6);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.last.one, .last.two {
+    border-bottom: none;
+    padding-bottom: 2.5em;
+}
+
+.attribution {
+    display: none;
+}
+
+@media screen and (min-width: 43rem) {
+    body {
+        margin: auto auto;
+        padding: 5rem;
+    }
+
+    .card {
+        max-width: 50rem;
+        width: 100%;
+        border-radius: 1.3em;
+        margin: auto auto;
+        padding: 2rem;
+    }
+
+    .recipe-image {
+        border-radius: 1.1em;
+        max-width: 50rem;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 0;
+        margin-bottom: 1.8em;
+        padding: 0.5em;
+    }
+
+    .recipe-title {
+        padding-top: 0;
+        margin-top: 0;
+        font-weight: 550;
+        font-size: 2.8rem;
+        margin-bottom: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .recipe-description {
+        font-size: 1.1rem;
+        padding: 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        margin-top: 0.8em;
+
+    }
+    
+    hr {
+        width: 45.5em;
+        margin-right: 2em;
+    }
+
+    .instructions-list {
+        padding: 0.5em 0;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        width: 34rem;
+        margin-top: 0;
+    }
+
+    .instructions {
+        margin-bottom: 0.3em;
+        font-size: 1.8rem;
+    }
+
+    .instructions-list li {
+        font-size: 1.1rem;
+    }
+
+    td {
+        padding-right: 1em;
+    }
+
+    .ingredients {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-size: 1.8rem;
+    }
+    
+    .ingredients-list li{
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-left: 0.5em;
+        font-size: 1rem;
+    }
+
+    .preparation-time {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .preparation-time h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5em;
+    }
+    .preparation-time ul li {
+        font-size: 1rem;
+    }
+    
+    .preparation-time ul {
+        margin-inline-start: 2em;
+        margin-inline-end: 2em;
+    }
+
+    .instructions {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+
+    .instructions-list {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        padding-right: 0;
+        width: 45em;
+    }
+
+    .instructions-list li {
+        margin-inline-start: 1em;
+        margin-inline-end: 1em;
+    }
+
+    .nutrition {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-size: 1.8rem;
+    }
+
+    .nutrition-description {
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+        font-size: 1.2rem;
+    }
+
+    .nutrition-table {
+        width: 45rem;
+    }
+
+    td, th {
+        font-size: 1.1rem;
+    }
+
+    .attribution {
+        display: inline-block;
+        position: absolute;
+        bottom: -91em;
+        right: 0;
+    }
+} 
