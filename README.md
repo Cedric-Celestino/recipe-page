@@ -90,7 +90,6 @@ In future projects, I want to focus more on:
 
 - **Website** – [Cedric Celestino](https://github.com/Cedric-Celestino)  
 - **Frontend Mentor** – [@Cedric-Celestino](https://www.frontendmentor.io/profile/Cedric-Celestino)  
-- **Twitter** – [@yourusername](https://www.twitter.com/yourusername)
 
 ---
 
