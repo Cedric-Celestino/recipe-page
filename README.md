@@ -68,7 +68,7 @@ Here’s one of my favorite code snippets from this project:
   margin: auto auto;
   padding: 2rem;
 }
-
+```
 
 ### Continued Development
 
