@@ -34,9 +34,8 @@ One of the key challenges I faced was maintaining **readability on large resolut
 ![Screenshot of Mobile Resolution](image-1.png)
 
 ### Links
-
-- **Solution URL:** [Add solution URL here](https://your-solution-url.com)  
-- **Live Site URL:** [Add live site URL here](https://your-live-site-url.com)
+  
+- **Live Site URL:** [https://cedric-celestino.github.io/recipe-page/](https://cedric-celestino.github.io/recipe-page/)
 
 ---
 
